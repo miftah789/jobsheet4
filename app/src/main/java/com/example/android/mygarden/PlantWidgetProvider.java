@@ -1,8 +1,10 @@
 package com.example.android.mygarden;
 
+import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
+import android.content.Intent;
 import android.widget.RemoteViews;
 
 /**
@@ -17,6 +19,12 @@ public class PlantWidgetProvider extends AppWidgetProvider {
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.plant_widget);
         views.setTextViewText(R.id.appwidget_text, widgetText);
+
+        // Add the wateringservice click handler
+        Intent wateringIntent = new Intent(context, PlantWateringService.class);
+        wateringIntent.setAction(PlantWateringService.ACTION_WATER_PLANTS);
+        PendingIntent wateringPendingIntent = PendingIntent.getService(context, 0, wateringIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        views.setOnClickPendingIntent(R.id.widget_water_button, wateringPendingIntent);
 
         // Instruct the widget manager to update the widget
         appWidgetManager.updateAppWidget(appWidgetId, views);
