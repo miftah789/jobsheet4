@@ -1,9 +1,9 @@
 # jobsheet4
-Nama : Miftahul Jannah 
-Kelas : XI RPL 6 
-No.Absen : 18 
-Sekolah : SMK TELKOM MALANG 
-NIS : 4749/1466.070 
+Nama : Miftahul Jannah  <br>
+Kelas : XI RPL 6 <br>
+No.Absen : 18 <br>
+Sekolah : SMK TELKOM MALANG <br>
+NIS : 4749/1466.070 <br>
 
 ![whatsapp image 2018-01-01 at 18 30 06 1](https://user-images.githubusercontent.com/22139208/34467547-b397ec9a-ef27-11e7-8362-9a84853e6d0c.jpeg)
 ![whatsapp image 2018-01-01 at 18 30 06 2](https://user-images.githubusercontent.com/22139208/34467548-b3cc8c34-ef27-11e7-8545-3d8ba6a75e72.jpeg)
