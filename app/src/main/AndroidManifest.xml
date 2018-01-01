@@ -41,7 +41,10 @@
 
         <service
             android:name=".PlantWateringService"
-            android:exported="false"></service>
+            android:exported="false" />
+        <service
+            android:name=".GridWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"></service>
     </application>
 
 </manifest>
